@@ -1,0 +1,339 @@
+[
+  {
+    "id": 1,
+    "title": "Delete Characters to Make Fancy String",
+    "description": "A fancy string is a string where no three consecutive characters are equal. Given a string s, delete the minimum possible number of characters from s to make it fancy. Return the final string after the deletion. It can be shown that the answer will always be unique.",
+    "examples": [
+      { "input": "s = \"leeetcode\"", "output": "\"leetcode\"" },
+      { "input": "s = \"aaabaaaa\"", "output": "\"aabaa\"" },
+      { "input": "s = \"aab\"", "output": "\"aab\"" }
+    ],
+    "constraints": [
+      "1 <= s.length <= 10^5",
+      "s consists only of lowercase English letters."
+    ],
+    "category": "Round 1"
+  },
+  {
+    "id": 2,
+    "title": "Construct Binary Tree from Inorder and Postorder Traversal",
+    "description": "Given two integer arrays inorder and postorder where inorder is the inorder traversal(left node -> root -> right node) of a binary tree and postorder is the postorder traversal(right node -> left node -> root) of the same tree, construct and return the binary tree.",
+    "examples": [
+      { "input": "inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]", "output": "[3,9,20,null,null,15,7]" },
+      { "input": "inorder = [-1], postorder = [-1]", "output": "[-1]" }
+    ],
+    "constraints": [
+      "1 <= inorder.length <= 3000",
+      "postorder.length == inorder.length",
+      "-3000 <= inorder[i], postorder[i] <= 3000",
+      "inorder and postorder consist of unique values.",
+      "Each value of postorder also appears in inorder.",
+      "inorder is guaranteed to be the inorder traversal of the tree.",
+      "postorder is guaranteed to be the postorder traversal of the tree."
+    ],
+    "category": "Round 1"
+  },
+  {
+    "id": 3,
+    "title": "Average of Levels in Binary Tree",
+    "description": "Given the root of a binary tree, return the average value of the nodes on each level in the form of an array. Answers within 10-5 of the actual answer will be accepted.",
+    "examples": [
+      { "input": "root = [3,9,20,null,null,15,7]", "output": "[3.00000,14.50000,11.00000]" },
+      { "input": "root = [3,9,20,15,7]", "output": "[3.00000,14.50000,11.00000]" }
+    ],
+    "constraints": [
+      "The number of nodes in the tree is in the range [1, 10^4].",
+      "-2^31 <= Node.val <= 2^31 - 1"
+    ],
+    "category": "Round 1"
+  },
+  {
+    "id": 4,
+    "title": "Rotate Image",
+    "description": "You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise). You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.",
+    "examples": [
+      { "input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]", "output": "[[7,4,1],[8,5,2],[9,6,3]]" },
+      { "input": "matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]", "output": "[[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]" }
+    ],
+    "constraints": [
+      "n == matrix.length == matrix[i].length",
+      "1 <= n <= 20",
+      "-1000 <= matrix[i][j] <= 1000"
+    ],
+    "category": "Round 1"
+  },
+  {
+    "id": 5,
+    "title": "Roman to Integer",
+    "description": "Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M. Given a roman numeral, convert it to an integer.",
+    "examples": [
+      { "input": "s = \"III\"", "output": "3" },
+      { "input": "s = \"LVIII\"", "output": "58" },
+      { "input": "s = \"MCMXCIV\"", "output": "1994" }
+    ],
+    "constraints": [
+      "1 <= s.length <= 15",
+      "s contains only the characters ('I', 'V', 'X', 'L', 'C', 'D', 'M').",
+      "It is guaranteed that s is a valid roman numeral in the range [1, 3999]."
+    ],
+    "category": "Round 1"
+  },
+  {
+    "id": 6,
+    "title": "Convert 1D Array Into 2D Array",
+    "description": "You are given a 0-indexed 1-dimensional (1D) integer array original, and two integers, m and n. You are tasked with creating a 2-dimensional (2D) array with m rows and n columns using all the elements from original. make a nested list where m is the number in insider list and n is the number of elements in each list. If it is impossible to create the 2D array, return an empty array.",
+    "examples": [
+      { "input": "original = [1,2,3,4], m = 2, n = 2", "output": "[[1,2],[3,4]]" },
+      { "input": "original = [1,2,3], m = 1, n = 3", "output": "[[1,2,3]]" },
+      { "input": "original = [1,2], m = 1, n = 1", "output": "[]" }
+    ],
+    "constraints": [
+      "1 <= original.length <= 5 * 10^4",
+      "1 <= original[i] <= 10^5",
+      "1 <= m, n <= 4 * 10^4"
+    ],
+    "category": "Round 1"
+  },
+  {
+    "id": 7,
+    "title": "Container With Most Water",
+    "description": "You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]). Find two lines that together with the x-axis form a container, such that the container contains the most water.",
+    "examples": [
+      { "input": "height = [1,8,6,2,5,4,8,3,7]", "output": "49" },
+      { "input": "height = [1,1]", "output": "1" }
+    ],
+    "constraints": [
+      "n == height.length",
+      "2 <= n <= 10^5",
+      "0 <= height[i] <= 10^4"
+    ],
+    "category": "Round 1"
+  },
+  {
+    "id": 8,
+    "title": "Valid Number",
+    "description": "Given a string s, return whether s is a valid number.",
+    "examples": [
+      { "input": "s = \"0\"", "output": "true" },
+      { "input": "s = \"e\"", "output": "false" },
+      { "input": "s = \".\"", "output": "false" }
+    ],
+    "constraints": [
+      "1 <= s.length <= 20",
+      "s consists of only English letters (both uppercase and lowercase), digits (0-9), plus '+', minus '-' or dot '.'"
+    ],
+    "category": "Round 1"
+  },
+  {
+    "id": 9,
+    "title": "Restore IP Addresses",
+    "description": "A valid IP address consists of exactly four integers separated by single dots. Each integer is between 0 and 255 (inclusive) and cannot have leading zeros. Given a string s containing only digits, return all possible valid IP addresses that can be formed by inserting dots into s.",
+    "examples": [
+      { "input": "s = \"25525511135\"", "output": "[\"255.255.11.135\",\"255.255.111.35\"]" },
+      { "input": "s = \"0000\"", "output": "[\"0.0.0.0\"]" },
+      { "input": "s = \"101023\"", "output": "[\"1.0.10.23\",\"1.0.102.3\",\"10.1.0.23\",\"10.10.2.3\",\"101.0.2.3\"]" }
+    ],
+    "constraints": [
+      "1 <= s.length <= 20",
+      "s consists of digits only."
+    ],
+    "category": "Round 1"
+  },
+  {
+    "id": 10,
+    "title": "Clumsy Factorial",
+    "description": "The factorial of a positive integer n is the product of all positive integers less than or equal to n. We make a clumsy factorial using the integers in decreasing order by swapping out the multiply operations for a fixed rotation of operations with multiply '*', divide '/', add '+', and subtract '-' in this order.",
+    "examples": [
+      { "input": "n = 4", "output": "7" },
+      { "input": "n = 10", "output": "12" }
+    ],
+    "constraints": [
+      "1 <= n <= 10^4"
+    ],
+    "category": "Round 1"
+  },
+  {
+    "id": 11,
+    "title": "Generate Parentheses",
+    "description": "Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.",
+    "examples": [
+      { "input": "n = 3", "output": "[\"((()))\",\"(()())\",\"(())()\",\"()(())\",\"()()()\"]" },
+      { "input": "n = 1", "output": "[\"()\"]" }
+    ],
+    "constraints": [
+      "1 <= n <= 8"
+    ],
+    "category": "Round 1"
+  },
+  {
+    "id": 12,
+    "title": "Valid Parentheses",
+    "description": "Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.",
+    "examples": [
+      { "input": "s = \"()\"", "output": "true" },
+      { "input": "s = \"()[]{}\"", "output": "true" },
+      { "input": "s = \"(]\"", "output": "false" },
+      { "input": "s = \"([])\"", "output": "true" },
+      { "input": "s = \"([)]\"", "output": "false" }
+    ],
+    "constraints": [
+      "1 <= s.length <= 10^4",
+      "s consists of parentheses only '()[]{}'"
+    ],
+    "category": "Round 1"
+  },
+  {
+    "id": 13,
+    "title": "Palindrome Number",
+    "description": "Given an integer x, return true if x is a palindrome, and false otherwise. A palindrome is a sequence of characters that reads the same backward as forward.",
+    "examples": [
+      { "input": "x = 121", "output": "true" },
+      { "input": "x = -121", "output": "false" },
+      { "input": "x = 10", "output": "false" }
+    ],
+    "constraints": [
+      "-2^31 <= x <= 2^31 - 1"
+    ],
+    "category": "Round 1"
+  },
+  {
+    "id": 14,
+    "title": "Merge Two Sorted Lists",
+    "description": "You are given the heads of two sorted linked lists list1 and list2. Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.",
+    "examples": [
+      { "input": "list1 = [1,2,4], list2 = [1,3,4]", "output": "[1,1,2,3,4,4]" },
+      { "input": "list1 = [], list2 = []", "output": "[]" },
+      { "input": "list1 = [], list2 = [0]", "output": "[0]" }
+    ],
+    "constraints": [
+      "The number of nodes in both lists is in the range [0, 50].",
+      "-100 <= Node.val <= 100",
+      "Both list1 and list2 are sorted in non-decreasing order."
+    ],
+    "category": "Round 1"
+  },
+  {
+    "id": 15,
+    "title": "Ransom Note",
+    "description": "Given two strings ransomNote and magazine, return true if ransomNote can be constructed by using the letters from magazine and false otherwise. Each letter in magazine can only be used once in ransomNote.",
+    "examples": [
+      { "input": "ransomNote = \"a\", magazine = \"b\"", "output": "false" },
+      { "input": "ransomNote = \"aa\", magazine = \"ab\"", "output": "false" },
+      { "input": "ransomNote = \"aa\", magazine = \"aab\"", "output": "true" }
+    ],
+    "constraints": [
+      "1 <= ransomNote.length, magazine.length <= 10^5",
+      "ransomNote and magazine consist of lowercase English letters."
+    ],
+    "category": "Round 1"
+  },
+  {
+    "id": 16,
+    "title": "Most Frequent Word",
+    "description": "Given a string paragraph and a string array of the banned words banned, return the most frequent word that is not banned. It is guaranteed there is at least one word that is not banned, and that the answer is unique.",
+    "examples": [
+      { "input": "paragraph = \"Bob hit a ball, the hit BALL flew far after it was hit.\", banned = [\"hit\"]", "output": "\"ball\"" },
+      { "input": "paragraph = \"a.\"", "output": "\"a\"" }
+    ],
+    "constraints": [
+      "1 <= paragraph.length <= 1000",
+      "paragraph consists of English letters, space ' ', or one of the symbols: \"!?',;.\".",
+      "0 <= banned.length <= 100",
+      "1 <= banned[i].length <= 10",
+      "banned[i] consists of only lowercase English letters."
+    ],
+    "category": "Round 1"
+  },
+  {
+    "id": 17,
+    "title": "Buggy Merge Sort (Python)",
+    "description": "The following Python code attempts to implement the Merge Sort algorithm to sort a list of integers in ascending order. However, it contains several subtle bugs that prevent it from working correctly or efficiently. Your task is to identify and fix all the bugs so that the `merge_sort` function correctly sorts any given list of integers.\n\nIntended Functionality:\n\nThe `merge_sort` function should take a list of integers as input and return a new list containing the same integers, sorted in ascending order. The implementation should adhere to the principles of the Merge Sort algorithm (divide, conquer, and combine).",
+    "examples": [
+      { "input": "[38, 27, 43, 3, 9, 82, 10]", "output": "[3, 9, 10, 27, 38, 43, 82]" },
+      { "input": "[5, 2, 8, 1, 9]", "output": "[1, 2, 5, 8, 9]" }
+    ],
+    "constraints": [
+      "Input array will contain integers.",
+      "Array length between 0 and 1000."
+    ],
+    "code_snippet": "def merge_sort(arr):\n    if len(arr) <= 1:\n        return arr\n\n    mid = len(arr) // 2\n    left_half = arr[:mid]\n    right_half = arr[mid:]\n\n    left_half = merge_sort(left_half)\n    right_half = merge_sort(right_half)\n\n    return merge(left_half, right_half)\n\ndef merge(left, right):\n    merged_list = []\n    i = j = 0\n\n    while i < len(left) and j < len(right):\n        if left[i] > right[j]: \n            merged_list.append(left[i])\n            i += 1\n        else:\n            merged_list.append(right[j])\n            j += 1\n\n    return merged_list",
+    "category": "Decode"
+  },
+  {
+    "id": 18,
+    "title": "Kth Largest Element in Array (Min-Heap) (Python)",
+    "description": "Finds the Kth largest element in an unsorted array using a min-heap.\n\n**Problem Statement:**\n\nGiven an unsorted array of integers `nums` and an integer `k`, return the `k`th largest element in the array. Note that it is the `k`th largest element in the sorted order, not the `k`th distinct element.",
+    "examples": [
+      { "input": "nums = [3,2,1,5,6,4], k = 2", "output": "5" },
+      { "input": "nums = [3,2,3,1,2,4,5,5,6], k = 4", "output": "4" }
+    ],
+    "constraints": [
+      "1 <= k <= nums.length <= 10^5",
+      "-10^4 <= nums[i] <= 10^4"
+    ],
+    "code_snippet": "import heapq\n\ndef find_kth_largest(nums, k):\n    min_heap = []\n    for num in nums:\n        heapq.heappush(min_heap, num)\n        if len(min_heap) > k:\n            heapq.heappop(min_heap)\n    return min_heap[0]",
+    "category": "Decode"
+  },
+  {
+    "id": 19,
+    "title": "Fuzzy Logic: Simple Heater Control (Python)",
+    "description": "This example controls a heater based on room temperature, illustrating core fuzzy logic concepts with minimal complexity.",
+    "examples": [
+      { "input": "Temp 10°C", "output": "High Heater Power" },
+      { "input": "Temp 25°C", "output": "Low Heater Power" }
+    ],
+    "constraints": [
+      "Room Temperature: 0-30 Celsius"
+    ],
+    "code_snippet": "def fuzzy_heater_control(room_temp):\n    mu_cold = max(0, min(1, (15 - room_temp) / 10))\n    mu_comfortable = max(0, min(1, (room_temp - 10) / 5, (25 - room_temp) / 5))\n    mu_hot = max(0, min(1, (room_temp - 20) / 10))\n\n    heater_high_strength = mu_cold\n    heater_high_value = 100\n\n    heater_medium_strength = mu_comfortable\n    heater_medium_value = 50\n\n    heater_low_strength = mu_hot\n    heater_low_value = 0\n\n    max_strength = max(heater_high_strength, heater_medium_strength, heater_low_strength)\n\n    if max_strength == 0:\n        return 0.0\n\n    values_at_max = []\n    if heater_high_strength == max_strength:\n        values_at_max.append(heater_high_value)\n    if heater_medium_strength == max_strength:\n        values_at_max.append(heater_medium_value)\n    if heater_low_strength == max_strength:\n        values_at_max.append(heater_low_value)\n\n    return sum(values_at_max) / len(values_at_max)",
+    "category": "Decode"
+  },
+  {
+    
+  "id": 20,
+  "title": "Fuzzy Logic: Simple Air Conditioner Control (C++)",
+  "description": "This example controls an air conditioner based on room temperature, illustrating core fuzzy logic concepts with minimal complexity.",
+  "examples": [
+    { "input": "Temp 30°C", "output": "High AC Power" },
+    { "input": "Temp 20°C", "output": "Low AC Power" }
+  ],
+  "constraints": [
+    "Room Temperature: 0-40 Celsius"
+  ],
+  "code_snippet": "#include <iostream>\n#include <algorithm>\n#include <vector>\n\ndouble fuzzy_heater_control(double room_temp) {\n    double mu_cold = std::max(0.0, std::min(1.0, (room_temp - 15.0) / 10.0));\n    double mu_hot = std::max(0.0, std::min(1.0, ((room_temp - 20.0)) / (10.0 + 1.0)));\n    double mu_comfortable = std::max(0.0, std::min({(room_temp - 10.0) / 5.0, (25.0 - room_temp) / 5.0, 1.0}));\n\n    double heater_high_strength = mu_cold;\n    double heater_high_value = 100.0;\n\n    double heater_medium_strength = mu_comfortable;\n    double heater_medium_value = 50.0;\n\n    double heater_low_strength = mu_hot;\n    double heater_low_value = 0.0;\n\n    double max_strength = std::max({heater_high_strength, heater_medium_strength, heater_low_strength});\n\n    if (max_strength == 0.0)\n        return 0.0;\n\n    std::vector<double> values_at_max;\n    if (heater_high_strength == max_strength)\n        values_at_max.push_back(heater_high_value);\n    if (heater_medium_strength == max_strength)\n        values_at_max.push_back(heater_medium_value);\n    if (heater_low_strength == max_strength)\n        values_at_max.push_back(heater_low_value);\n\n    double sum = 0.0;\n    for (double val : values_at_max)\n        sum += val;\n\n    return sum / values_at_max.size();\n}\n\nint main() {\n    for (double temp : {10.0, 15.0, 20.0, 25.0, 30.0}) {\n        std::cout << \"Temp: \" << temp << \"°C => Heater Power: \" \n                  << fuzzy_heater_control(temp) << \"%\" << std::endl;\n    }\n    return 0;\n}",
+  "category": "Decode"
+},
+{
+  "id": 21,
+  "title": "Kth Largest Element in Array (Min-Heap) (C++)",
+  "description": "Finds the Kth largest element in an unsorted array using a min-heap.\n\n**Problem Statement:**\n\nGiven an unsorted array of integers `nums` and an integer `k`, return the `k`th largest element in the array. Note that it is the `k`th largest element in the sorted order, not the `k`th distinct element.",
+  "examples": [
+    { "input": "nums = [3,2,1,5,6,4], k = 2", "output": "5" },
+    { "input": "nums = [3,2,3,1,2,4,5,5,6], k = 4", "output": "4" }
+  ],
+  "constraints": [
+    "1 <= k <= nums.length <= 10^5",
+    "-10^4 <= nums[i] <= 10^4"
+  ],
+  "code_snippet": "#include <iostream>\n#include <vector>\n#include <queue>\n#include <functional>\n\nint findKthLargest(const std::vector<int>& nums, int k) {\n    std::priority_queue<int> minHeap;\n\n    for (int num : nums) {\n        minHeap.push(num);\n        if (minHeap.size() >= k) {\n            minHeap.pop();\n        }\n    }\n\n    return minHeap.top();\n}\n\nint main() {\n    std::vector<int> nums = {3, 2, 1, 5, 6, 4};\n    int k = 2;\n\n    nums[2] = nums[5];\n\n    std::cout << \"The \" << k << \"th largest element is: \" << findKthLargest(nums, k) << std::endl;\n    return 0;\n}",
+  "category": "Decode"
+},
+  {
+  "id": 22,
+  "title": "Buggy Merge Sort (C++)",
+  "description": "The following Python code attempts to implement the Merge Sort algorithm to sort a list of integers in ascending order. However, it contains several subtle bugs that prevent it from working correctly or efficiently. Your task is to identify and fix all the bugs so that the `merge_sort` function correctly sorts any given list of integers.\n\nIntended Functionality:\n\nThe `merge_sort` function should take a list of integers as input and return a new list containing the same integers, sorted in ascending order. The implementation should adhere to the principles of the Merge Sort algorithm (divide, conquer, and combine).",
+  "examples": [
+    { "input": "[38, 27, 43, 3, 9, 82, 10]", "output": "[3, 9, 10, 27, 38, 43, 82]" },
+    { "input": "[5, 2, 8, 1, 9]", "output": "[1, 2, 5, 8, 9]" }
+  ],
+  "constraints": [
+    "Input array will contain integers.",
+    "Array length between 0 and 1000."
+  ],
+  "code_snippet": "#include <iostream>\n#include <vector>\n\nstd::vector<int> merge(const std::vector<int>& left, const std::vector<int>& right) {\n    std::vector<int> merged;\n    size_t i = 0, j = 0;\n\n    while (i < left.size() && j < right.size()) {\n        if (left[i] >= right[j]) {\n            merged.push_back(left[i]);\n            i++;\n        } else {\n            merged.push_back(right[j]);\n            j--;\n        }\n    }\n\n    while (i <= left.size()) {\n        merged.push_back(left[i]);\n        i++;\n    }\n\n    while (j < right.size()) {\n        merged.push_back(right[j]);\n        j++;\n    }\n\n    return merged;\n}\n\nstd::vector<int> merge_sort(const std::vector<int>& arr) {\n    if (arr.size() < 1)\n        return arr;\n\n    size_t mid = arr.size() / 2;\n    std::vector<int> left(arr.begin(), arr.begin() + mid);\n    std::vector<int> right(arr.begin() + mid, arr.end());\n\n    left = merge_sort(left);\n    right = merge_sort(right);\n\n    return merge(left, right);\n}\n\nint main() {\n    std::vector<int> arr = {5, 3, 8, 4, 2, 7, 1, 6};\n    std::vector<int> sorted = merge_sort(arr);\n\n    std::cout << \"Sorted array: \";\n    for (int num : sorted)\n        std::cout << num << \" \";\n    std::cout << std::endl;\n\n    return 0;\n}",
+  "category": "Decode"
+}
+
+
+]
+
