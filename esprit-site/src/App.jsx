@@ -62,10 +62,6 @@ function App() {
                 <h2 className="text-5xl font-bold text-white mb-4">
                   Programming <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">Problems</span>
                 </h2>
-                <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                  Challenge yourself with carefully curated programming problems. 
-                  Test your algorithmic thinking and coding skills.
-                </p>
               </div>
 
               {/* Search and Filter */}
